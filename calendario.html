@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/calendario.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <script src="script/calendar.js" defer></script>
+    <link rel="stylesheet" href="./css/calendar.css">
+    <title>Auditorio</title>
+</head>
+</head>
+<body>
+    <header>
+        <a href="">
+            <img id='logo' src="./img/senai-logo.png" alt="">
+        </a>
+        <div id='menu'>
+        <a href="">
+            <div class="itens-menu">
+                <h3>AREA ADMINISTRATIVA</h3>
+            </div>
+        </a>
+        <a href="">    
+            <div class="itens-menu">
+                <h3>VERIFIQUE A DISPONIBILIDADE</h3>
+            </div>
+        </a>
+        </div>
+    </header>
+    <main>
+    <div>
+    <div class="root">
+        <div class="calendar" id="calendar">
+
+        </div>
+    </div>
+    <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/pt.js"></script>
+    <script  type="text/javascript" src="./script/calendar.js"></script>
+    <script type="text/javascript">
+        let calendar = new Calendar('calendar');
+        calendar.getElement().addEventListener('change', e => {
+            console.log(calendar.value().format('LLL'));
+        });
+    </script>   
+
+    </div>
+    </main>
+    <footer>
+        <h3>
+            Copyright &copy; Alex, Carlos, Richard M., Thiago M. 2021
+        </h3>
+        <h3>
+            SITE CONSTRUÍDO PARA O CURSO DE DESENVOLVIMENTO DE SISTEMAS
+        </h3>
+    </footer>
+</body>
+</html>

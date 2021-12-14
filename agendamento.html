@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/agendamento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Auditorio</title>
+</head>
+</head>
+<body>
+    <header>
+        <a href="">
+            <img id='logo' src="./img/senai-logo.png" alt="">
+        </a>
+        <div id='menu'>
+        <a href="">
+            <div class="itens-menu">
+                <h3>AREA ADMINISTRATIVA</h3>
+            </div>
+        </a>
+        <a href="">    
+            <div class="itens-menu">
+                <h3>VERIFIQUE A DISPONIBILIDADE</h3>
+            </div>
+        </a>
+        </div>
+    </header>
+    <main>
+        <!-- FORMULARIO -->
+        <div class="form">
+        <!-- TITULO -->
+        <div class="titulo">
+            <h1>AGENDAMENTO</h1>
+        </div>
+            <form method="post" action="index.php"><br>
+                <!-- NOME -->
+                <div class="nome">
+                <input id="nome" type="text"size="40"placeholder="NOME">
+                </div>
+                <!-- ... -->
+               
+                <!-- TELEFONE PARA CONTATO,EMAIL -->
+                <div class="contato">
+                <input id="telefone"type="text"placeholder="TELEFONE PARA CONTATO">
+                <input id="email"type="email"placeholder="EMAIL">
+                </div>
+                <!-- ... -->
+                <!-- NOME DO EVENTO -->
+                <div class="nomeEvento">
+                <input id="nomeEvento" type="text"size="40"placeholder="NOME DO EVENTO">
+                </div>
+                <!-- ... -->
+                <!-- DIA DA SEMANA,DATA -->
+                <div class="diaData">
+                    <input id="diaDaSemana"type="text"placeholder="DIA DA SEMANA">
+                    <input id="data" type="date" name="DATA" id="data">
+                </div>
+                <!-- ... -->
+                <!-- HORARIO INICIO,HORARIO FIM -->
+                <div class="horarios">
+                    <input id="horarioInicio"type="text"placeholder="HORÁRIO INICIO">
+                    <input id="horarioFim"type="text"placeholder="HORÁRIO FIM">
+                </div>
+                <!-- ... -->
+                
+                <!-- OBSERVAÇÕAES -->
+                <h2>OBSERVAÇÕES</h2>
+               <div id="descricao">
+                <input id="observacao"type="text">
+               </div>
+                
+                <input type="button" value="CANCELAR"> 
+                <input type="button" value="ENVIAR"><br><br>
+           </form>
+        </div>
+
+
+
+
+
+
+
+        <!--  -->
+    </main>
+    <footer>
+        <h3>
+            Copyright &copy; Alex, Carlos, Richard M., Thiago M. 2021
+        </h3>
+        <h3>
+            SITE CONSTRUÍDO PARA O CURSO DE DESENVOLVIMENTO DE SISTEMAS
+        </h3>
+    </footer>
+</body>
+</html>

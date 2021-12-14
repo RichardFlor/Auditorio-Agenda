@@ -1,0 +1,172 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    height:70px;
+    width: 100%;
+    background-color: #006699;
+    margin-bottom: 50px;
+    padding: 5px;
+}
+#logo{
+    height: 60px;
+    width: 230px;
+    float: left;
+}
+#menu{
+    width: 500px;
+    height: 70px;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.itens-menu{
+    height: 35px;
+    width: 250px;
+}
+h3{
+    color: white;
+}
+main{
+    min-height: 700px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+
+.titulo{
+    text-align: center;
+    font-weight: bold;
+}
+
+/* FORMULARIO */
+
+
+.form{
+	overflow: hidden;
+	background:#d3d3d3;
+	width: 30%;
+    min-height: 70%;
+    height: auto;
+	margin:50px auto ;
+    text-align: center;
+    padding-top: 20px;
+	/* border: 2px solid #069; */
+	border-radius: 10px;
+}
+
+input,select{
+	border-radius: 10px;
+	height: 30px;
+	border: none;
+	margin: 5px;
+}
+input[type="submit"]{
+	cursor: pointer;
+	border-radius: 5px;
+	border: none;
+	width: 80px;
+	height: 35px;
+}
+input[type="button"]{
+	cursor: pointer;
+	border-radius: 5px;
+	border: none;
+	width: 80px;
+	height: 35px;
+}
+input[type="submit"]:hover{
+	background: #069;
+	color: #fff;
+}
+input[type="button"]:hover{
+	background: #069;
+	color: #fff;
+}
+
+
+#nome{
+    width: 350px;
+    padding-left: 5px;
+}
+#telefone{
+    width: 170px;
+    padding-left: 5px;
+}
+#email{
+    width: 170px;
+    padding-left: 5px;
+}
+#nomeEvento{
+    width: 350px;
+    padding-left: 5px;
+}
+#diaDaSemana{
+    width: 170px;
+    padding-left: 5px;
+}
+#data{
+    width: 170px;
+    padding-left: 5px;
+}
+#horarioInicio{
+    width: 170px;
+    padding-left: 5px;
+}
+#horarioFim{
+    width: 170px;
+    padding-left: 5px;
+}
+#descricao{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#observacao{
+    height: 100px;
+    width: 350px;
+}
+
+
+@media (max-width: 680px) {
+	.form { 
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 80%;
+	height: auto;
+	margin-top: 0  ;
+	}
+	input, label{ 
+	margin: 5px;
+	}   
+}
+
+
+
+/*  */
+
+
+footer{
+    height: 70px;
+    width: 100%;
+    background-color: #006699;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
